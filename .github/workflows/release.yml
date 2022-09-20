@@ -35,6 +35,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ALLERO_BUILD_VERSION: ${{ github.event.inputs.release_version }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
 
       - name: Push Formula
         env:
